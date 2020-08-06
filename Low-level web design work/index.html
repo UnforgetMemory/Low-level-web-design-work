@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>此网页受密码保护</title>
+</head>
+
+<script>
+	function password() {		
+		var testV = 1;//计数器，记录密码错误次数
+		var psw = prompt("网站全新升级！请输入密码：(没密码？输入 2 试试)","2");
+		while (testV) {
+			if (psw!=2){
+				history.go(-1);//密码错误返回上一页
+			}
+			if (psw==2) {
+				location.href="html/Login.html";//密码正确，跳到指定页面
+				break;
+			}
+			testV+=1;
+			psw=prompt("网站全新升级！请输入密码：(没密码？请不要浪费你的时间)","");
+		}
+	}	
+password();
+</script>
+
+
+<body>
+
+</body>
+</html>

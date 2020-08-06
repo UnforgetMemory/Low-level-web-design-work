@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>注册 UnforgetMemory</title>
+     <link rel="stylesheet" href="../css/sign.css">
+ </head>
+
+ <body>
+     <div class="card">
+         <div class="xinxi">
+             <h1> UnforgetMemory</h1>
+             <h2>注册</h2>
+
+             <form action="#" method="get" autocomplete="off">
+
+                 <p><img src="../images/sjx.png"><span>注册邮箱：</span>
+                     <input type="text" name="email" placeholder="Enter your user email" required
+                         autofocus></input><span>&nbsp@</span>
+                     <select name="email2">
+                         <option value="gmail.com">gmail.com</option>
+                         <option value="gmail.com">163.com</option>
+                         <option value="gmail.com">qq.com</option>
+                     </select>*</p>
+                 <p><img src="../images/g.png"><span>用户名：</span>
+                     <input type="password" name="pd" placeholder="Enter your password" required></input>*</p>
+                 <p><img src="../images/zw.png"><span>密码：</span>
+                     <input type="text" name="real_name" pattern="^[\u4e00-\u9fa5]{0,}\[a-zA-z]\w{3,15}$"
+                         placeholder="Enter your name" required></input>*</p>
+                 <p><img src="../images/kh.png"><span>性别：</span><input type="text" name="gender" list="genderlist" pattern="^[/^男$|^女&/]"
+                         placeholder="Choose your gender" required></input>
+                     <datalist id="genderlist">
+                         <option>男</option>
+                         <option>女</option>
+                     </datalist></p>
+                 <p><img src="../images/f.png"><span>出生日期：</span><input type="date" name="birthday"></input></p>
+
+                 <p><img src="../images/ic.png"><span>公民身份证号码：</span><input type="text" name="Id"
+                         placeholder="Enter your id number" required pattern="^\d{8,18}|[0-9x]{8,18}|[0-9X]{8,18}?$"
+                         required></input>*</p>
+                 <p><img src="../images/sj.png"><span>注册手机号码：</span><input type="tel" name="phone" pattern="^\d{11}$" placeholder="Enter your phone number
+                    " required></input>*</p>
+                 <p><img src="../images/bianji.png"><span>个人介绍：</span><br><br><textarea rows="5" cols="50" maxlength="200"
+                         placeholder="Please enter an introduction of less than 200 words"></textarea>
+
+                 </p>
+
+                 <p class="btn">
+                     <input type="submit" value="提交" />
+                     <input type="reset" value="重置" />
+                 </p>
+             </form>
+         </div>
+     </div>
+
+     <div class="box2"><a href="../html/Login.html"><img src="../images/k.png"></a></div>
+ </body>
+
+ </html>

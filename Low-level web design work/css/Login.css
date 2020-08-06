@@ -1,0 +1,283 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin: 0;
+	padding: 0;
+	background: url(../images/m.jpg);
+	background-size:3840px 2160px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	overflow: auto;
+}
+
+.loginBox {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -10%);
+	width: 388px;
+	height: 588px;
+	box-sizing: border-box;
+	background: rgba(0, 0, 0, 0.0);
+	border-radius: 20px;
+	transition: all 20s linear;
+
+}
+
+.user {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	position: absolute;
+	padding-top: 50%;
+	left: calc(50% - 90px);
+	transition: 2s 20s linear;
+}
+
+
+.loginBox:hover .user {
+	top: calc(-200px/2);
+	padding: 0;
+	transition: 1.2s ;
+}
+
+.loginBox:hover h1 {
+	transition: 1.2s ;
+	transform: translateY(-210%);
+}
+
+.loginBox:hover h1 .um {
+	transition: 6s ;
+	color: lightsalmon;
+
+}
+
+.loginBox:hover h1 .wc {
+	color: black;
+	animation: bs 2s 6s infinite reverse;
+	transition: 5s linear;
+}
+
+.loginBox:hover .box1 {
+	transform: translateY(0%);
+	transition: 1.2S ;
+}
+
+.loginBox:hover{
+	background: rgba(0, 0, 0, 0.18);
+	box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.50);
+	transition: 1.0S ;
+}
+
+
+
+.loginBox p {
+	font-weight: bold;
+	color: rgba(247, 242, 243, 1.00);
+	font-size: 20px;
+}
+
+.loginBox .lanjie {
+	overflow: hidden;
+	width: 399px;
+	height: 470px;
+	margin-top: -20%;
+	position: absolute;
+}
+
+.loginBox .box1 {
+	width: 388px;
+	height: 288px;
+	transform: translateY(155%);
+	position: absolute;
+	transition: all 15s linear;
+}
+
+.loginBox input {
+	width: 200px;
+	margin-bottom: 10px;
+	margin-left: 120px;
+	padding-left: 16px;
+}
+
+.loginBox input:focus {
+	background-color: cornsilk;
+}
+
+
+.loginBox input {
+	border: none;
+	border-bottom: 1px solid rgba(75, 140, 186, 1.00);
+	border-radius: 5px;
+	background-color: rgba(236, 216, 216, 0.884);
+	outline: none;
+	height: 25px;
+}
+
+
+.mma {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+
+}
+
+h1 {
+	color: #257DAD;
+	padding-top: 70px;
+	text-align: center;
+	transform: translateY(210%);
+	transition: all 20s linear;
+}
+
+.unpd {
+	width: 30px;
+	height: 30px;
+
+}
+
+a {
+	color: rgb(1, 12, 12);
+	text-decoration: none;
+
+}
+
+.box2 {
+	margin-top: 60px;
+	margin-left: 190px;
+	width: 140px;
+	height: 30px;
+	overflow: hidden;
+	border-radius: 10px;
+	background-color: rgba(219, 241, 241, 0.637);
+	position: relative;
+	box-shadow: 2px 6px 15px rgb(22, 22, 22);
+
+}
+
+.box2 span {
+	position: absolute;
+}
+
+.box2 span:nth-child(1) {
+	width: 100%;
+	height: 3px;
+	background: -webkit-linear-gradient(left, transparent, #043804);
+	left: -100%;
+	top: 0px;
+	animation: line1 1s linear infinite;
+}
+
+@keyframes line1 {
+
+	50%,
+	100% {
+		left: 100%;
+	}
+}
+
+.box2 span:nth-child(2) {
+	width: 3px;
+	height: 100%;
+	background: -webkit-linear-gradient(top, transparent, #ff0479);
+	right: 0px;
+	top: -100%;
+	animation: line2 1s 0.25s linear infinite;
+}
+
+@keyframes line2 {
+
+	50%,
+	100% {
+		top: 100%;
+	}
+}
+
+.box2 span:nth-child(3) {
+	width: 100%;
+	height: 3px;
+	background: -webkit-linear-gradient(right, transparent, #0a0a0a);
+	left: 100%;
+	top: 90%;
+	animation: line3 1s 0.5s linear infinite;
+}
+
+@keyframes line3 {
+
+	50%,
+	100% {
+		left: 0%;
+	}
+}
+
+.box2 span:nth-child(4) {
+	width: 3px;
+	height: 100%;
+	background: -webkit-linear-gradient(bottom, transparent, #ff1504);
+	left: 0px;
+	top: 100%;
+	animation: line4 1s 0.75s linear infinite;
+}
+
+@keyframes line4 {
+
+	50%,
+	100% {
+		top: 0%;
+	}
+}
+
+.box2:hover {
+	box-shadow: none;
+}
+
+.box3 {
+	padding-top: 20%;
+	padding-left: 50%;
+	height: 40px;
+	position: absolute;
+}
+
+.wc {
+	color: rgb(57, 219, 192);
+}
+
+.box1 p {
+	padding-left: 28px;
+	color: rgb(216, 231, 8);
+}
+
+@keyframes bs {
+
+	0%,
+	60% {
+		color: lightslategrey;
+	}
+
+	20%,
+	80% {
+		color: limegreen;
+	}
+
+	30%,
+	70% {
+		color: rgb(247, 150, 6);
+	}
+
+	60%,
+	100% {
+		color: rgb(243, 127, 195);
+	}
+}
+.box1 .zc{
+	position: relative;
+	padding-top: 5%;
+	width:100x;
+	height: 25px;
+}
+
+.box1 .zc a{
+	padding-left: 20%;
+	font-size: 25px;
+	color: #5abb19;
+
+}
